@@ -14,7 +14,7 @@ class PttBeautySpider(scrapy.Spider):
 
 
     def parse(self, response):
-        for i in range(10):
+        for i in range(100):
             time.sleep(3)
             url = "https://www.ptt.cc/bbs/Beauty/index" + str(3999 - i) + ".html"
             yield scrapy.Request (url, cookies={'over18': '1'}, callback=self.parse_article)
