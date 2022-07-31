@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 import scrapy
 from bs4 import BeautifulSoup
 import requests
 from scrapy_selenium import SeleniumRequest
 import time
 from ptt.items import PttItem
+
 
 class PttBeautySpider(scrapy.Spider):
     name = 'ptt_beauty'
